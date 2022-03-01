@@ -1,0 +1,21 @@
+def odd_occurence(my_list, list_size):
+
+   for i in range(0, list_size):
+      count = 0
+      for j in range(0, list_size):
+         if my_list[i] == my_list[j]:
+            count+= 1
+
+      if (count % 2 != 0):
+         return my_list[i]
+
+   return -1
+my_list = [34, 56, 78, 99, 23, 34, 34, 56, 78, 99, 99, 99, 99, 34, 34, 56, 56 ]
+print("The list is :")
+print(my_list)
+n = len(my_list)
+print("The length is :")
+print(n)
+print("The method to find the element that occurs odd number of times is called ")
+print("The element that occurs odd number of times is :")
+print(odd_occurence(my_list, n))
